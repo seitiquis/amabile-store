@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -32,3 +33,120 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar — Amábile</title>
+
+  <!-- === ESTILOS === -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Script de autenticação -->
+  <script src="auth.js" defer></script>
+</head>
+<body>
+
+  <div class="auth-container">
+    <a href="index.html" class="voltar">
+      <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+
+    <h2>Entrar</h2>
+
+    <form id="loginForm" class="auth-form">
+      <input type="email" id="email" name="email" placeholder="E-mail" required>
+      <input type="password" id="senha" name="senha" placeholder="Senha" required>
+      <button type="button" onclick="login()">Entrar</button>
+    </form>
+
+    <p class="auth-footer">
+      Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a>
+    </p>
+  </div>
+
+  <style>
+    body {
+      background: #f8f5f2;
+      font-family: "Poppins", sans-serif;
+      color: #5a4635;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .auth-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .auth-container h2 {
+      margin-bottom: 25px;
+      font-size: 1.8em;
+      color: #b18b56;
+    }
+
+    .auth-form input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .auth-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #b18b56;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .auth-form button:hover {
+      background-color: #9c7c4c;
+    }
+
+    .auth-footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+
+    .auth-footer a {
+      color: #b18b56;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .voltar {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      color: #b18b56;
+      font-weight: 500;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  </style>
+</body>
+</html>
+>>>>>>> 7c7f02d9ed20649d4528bd795897f1f7f72dbb09

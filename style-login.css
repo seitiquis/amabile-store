@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
@@ -82,3 +83,89 @@ button:hover {
 .link a:hover {
   text-decoration: underline;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  background: #f7f5f2;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.auth-container {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.brand {
+  font-family: 'Beautifully Delicious Script', cursive;
+  color: #c7a36f;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #6b5b4b;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #d5cbbf;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #c7a36f;
+}
+
+button {
+  background: #c7a36f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #b18b56;
+}
+
+.link {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #6b5b4b;
+}
+
+.link a {
+  color: #c7a36f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+>>>>>>> 7c7f02d9ed20649d4528bd795897f1f7f72dbb09
