@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Compra — Amábile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/auth.js" defer></script>
+</head>
+<body onload="verificarLoginCheckout()">
+
+  <header class="topbar">
+    <a href="carrinho.html" class="voltar">← Voltar</a>
+    <h1>Finalizar Compra</h1>
+  </header>
+
+  <main class="checkout-container">
+    <p>Olá, <span id="nomeUsuario"></span>! 💖</p>
+    <p>Em breve você poderá escolher o método de pagamento e endereço de entrega.</p>
+    <button onclick="finalizarPedido()">Concluir Pedido</button>
+  </main>
+
+  <footer>
+    © 2025 Amábile — Tendência Evangélica e Sofisticação
+  </footer>
+
+  <script>
+    function verificarLoginCheckout() {
+      const usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
+      if (!usuario) {
+        alert("Faça login para continuar!");
+        window.location.href = "login.html";
+        return;
+      }
+      document.getElementById("nomeUsuario").textContent = usuario.nome.split(" ")[0];
+    }
+
+    function finalizarPedido() {
+      alert("Pedido finalizado com sucesso! 💐");
+      localStorage.removeItem('carrinho');
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

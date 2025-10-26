@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho — Amábile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/auth.js" defer></script>
+  <script src="js/carrinho.js" defer></script>
+</head>
+<body onload="carregarCarrinho()">
+
+  <header class="topbar">
+    <a href="index.html" class="voltar">← Voltar à loja</a>
+    <h1>Carrinho de Compras</h1>
+  </header>
+
+  <main class="carrinho-container">
+    <div id="listaCarrinho" class="lista-carrinho"></div>
+
+    <div class="resumo-carrinho">
+      <h3>Total: R$ <span id="total">0,00</span></h3>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Amábile — Tendência Evangélica e Sofisticação
+  </footer>
+
+</body>
+</html>
