@@ -17,7 +17,6 @@ function login() {
   }
 }
 
-// Função de cadastro
 function cadastrar() {
   const nome = document.querySelector('input[name="nome"]').value.trim();
   const email = document.querySelector('input[name="email"]').value.trim();
@@ -40,7 +39,7 @@ function cadastrar() {
   localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
   alert("Cadastro realizado com sucesso!");
-  window.location.href = "login.html";
+  window.location.href = "login.html"; // redireciona pro login
 }
 
 // Função de logout (chamada pelo botão 'Sair' na index)
@@ -82,3 +81,4 @@ function carregarUsuario() {
     `;
   }
 }
+
