@@ -573,4 +573,69 @@ html {
 .voltar:hover {
   color: #a67c49;
 }
+/* === RESPONSIVIDADE PARA CELULARES === */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  header.topbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .search-area {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  nav.menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav.menu ul li {
+    margin: 5px 10px;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .categoria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categorias {
+    grid-template-columns: 1fr;
+  }
+
+  header.topbar h1 {
+    font-size: 22px;
+  }
+
+  nav.menu ul li a {
+    font-size: 14px;
+  }
+}
+
 
